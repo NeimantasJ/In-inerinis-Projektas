@@ -13,7 +13,7 @@ def read_file(filename):
     return data['points']
 
 def main(count):
-  x = read_file('C:/Darbas/Studijos/Lygiagretusis/Projektas/datapack3.json')
+  x = read_file('datapack3.json')
   start_time = int(round(time.time() * 1000))
   p = Pool(count)
   p.map(greiciausio_nusileidimo, x)
